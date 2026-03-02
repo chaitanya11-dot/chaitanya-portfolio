@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chaitanya | Full Stack Developer</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+</head>
+<script>
+  const reveals = document.querySelectorAll(".reveal, .reveal-left, .reveal-right");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("active");
+      }
+    });
+  }, {
+    threshold: 0.15
+  });
+
+  reveals.forEach(reveal => {
+    observer.observe(reveal);
+  });
+</script>
+<script>
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY;
+    document.body.style.backgroundPosition = 
+      `${scrollY * 0.2}px ${scrollY * 0.1}px`;
+  });
+</script>
+<script>
+  const spotlight = document.querySelector(".spotlight");
+
+  document.addEventListener("mousemove", (e) => {
+    spotlight.style.left = e.clientX + "px";
+    spotlight.style.top = e.clientY + "px";
+  });
+</script>
+
+<body>
+
+<div class="floating-glow"></div>
+<div class="spotlight"></div>
+<header>
+    <div class="div-list">
+        <ul class="ul-list">
+            <li class="active">
+                <i class="fa-solid fa-circle-user"></i>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-address-card"></i>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-folder-open"></i>
+                <a href="#project">Projects</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-code"></i>
+                <a href="#service">Services</a>
+            </li>
+            <li>
+                <i class="fa-regular fa-envelope"></i>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </div>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <p class="home-p">
+        <span class="home-s">. </span>Open to Internships & Real-World Projects
+    </p>
+
+    <div class="home-container">
+        <div class="home-section">
+            <div class="info-home">
+                <h1>Hi, I'm Chaitanya </h1>
+                <h3>Full-Stack Developer | AI Explorer</h3>
+
+                <div class="info-p">
+                   <p>I build scalable web applications and intelligent systems.</p>
+                   <p>Passionate about clean architecture, problem-solving,</p>
+                   <p>and real-world impactful projects.</p>
+                </div>
+
+                <div class="info-p2">
+                    <p><i class="fa-solid fa-location-dot"></i> Based in Vishakapatanam,India</p>
+                    <p><i class="fa-solid fa-briefcase"></i> Available for Internships</p>
+                </div>
+
+                <div class="btnn">
+                    <a href="#project" class="btn-primary">
+                        <i class="fa-solid fa-arrow-right"></i> View Projects
+                    </a>
+                    <a href="resume.pdf" download class="btn-outline">
+                        <i class="fa-solid fa-download"></i> Download Resume
+                    </a>
+                </div>
+
+                <div class="hhr">
+                    <hr>
+                </div>
+
+                <div class="follow-section">
+    <hr class="follow-line">
+
+    <div class="follow-row">
+        <p class="follow-text">Follow me:</p>
+
+        <div class="follow-icons">
+            <a href="https://github.com/chaitanya11-dot" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/pamidi-chaitanya-379093350/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.codechef.com/users/chai11" target="_blank" class="cc-link">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/codechef.svg" 
+                 alt="CodeChef" class="cc-icon">
+            </a>
+            
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+
+        <img src="images/profile.c.jpg" alt="Chaitanya">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about-section" id="about">
+
+  <div class="about-container">
+
+    <!-- LEFT SIDE -->
+    <div class="about-left">
+
+      <h2 class="about-title">ABOUT ME</h2>
+
+      <p>
+        Hi! I'm Chaitanya, a passionate Computer Science undergraduate 
+        focused on full-stack development and AI-driven systems.
+      </p>
+
+      <p>
+        I enjoy building real-world applications that solve meaningful problems 
+        and create impact.
+      </p>
+
+      <p>
+        Currently strengthening my expertise in:
+      </p>
+
+      <div class="about-skills">
+        <p><span>#</span> HTML, CSS, JavaScript, React</p>
+        <p><span>#</span> Python & Backend Development</p>
+        <p><span>#</span> REST APIs & Database Integration</p>
+        <p><span>#</span> Automation & Intelligent Systems(learning)</p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE IMAGE -->
+    <div class="about-right">
+      <div class="photo-frame">
+        <img src="images\prof.png" alt="Profile">
+
+        <span class="tape tape-top"></span>
+        <span class="tape tape-bottom"></span>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+<section class="projects-section" id="project">
+<p class="projects-subtitle">PROJECTS</p>
+  <h2 class="projects-title">Featured Work</h2>
+  <div class="projects-line"></div>
+
+  <p class="projects-description">
+    A showcase of my recent projects demonstrating expertise in full-stack
+    development, modern frameworks, and creative problem-solving.
+  </p>
+
+  <div class="projects-grid">
+    <!-- CARD 1 -->
+    <div class="project-card">
+      <img src="images\trendsphere.png" alt="E-Commerce Website">
+      <h3>TrendSphere</h3>
+      <p>Designed to act like a bridge between brand owners and influencers</p>
+      <div class="project-tags">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>typeScript</span>
+      </div>
+      <div class="project-buttons">
+        <a href="https://trendsphere-self.vercel.app/" class="btn-primary">Live</a>
+        <a href="https://github.com/chaitanya11-dot/trendsphere.git" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="project-card">
+      <img src="images\automatedresume.png" alt="">
+      <h3>Automated Resume Reader</h3>
+      <p>AI-powered resume parsing and analysis tool.</p>
+      <div class="project-tags">
+        <span>API</span>
+        <span>JS</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>typeScript</span>
+      </div>
+      <div class="project-buttons">
+        <a href="https://automated-resume-reader-amber.vercel.app/" class="btn-primary">Live</a>
+        <a href="https://github.com/chaitanya11-dot/automated-resume-reader.git" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="project-card">
+      <img src="images\nyayabot.png" alt="">
+      <h3>NyayaBot</h3>
+      <p>AI-powered legal assistant for case and section analysis</p>
+      <div class="project-tags">
+        <span>API</span>
+        <span>JS</span>
+        <span>Frontend</span>
+      </div>
+      <div class="project-buttons">
+        <a href="https://nayabot-xi.vercel.app/" class="btn-primary">Live</a>
+        <a href="https://github.com/chaitanya11-dot/nayabot.git" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+
+    <!-- CARD 4 -->
+    <div class="project-card">
+      <img src="images\community.png" alt="">
+      <h3>Community Volunteering Platform</h3>
+      <p>Platform for managing community volunteering activities.</p>
+      <div class="project-tags">
+        <span>Tailwind</span>
+        <span>JS</span>
+        <span>HTML</span>
+      </div>
+      <div class="project-buttons">
+        <a href="https://community-volunteering.vercel.app/" class="btn-primary">Live</a>
+        <a href="https://github.com/chaitanya11-dot/community-volunteering.git" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+
+    <!-- CARD 5 -->
+    <div class="project-card">
+      <img src="images\email.png" alt="">
+      <h3>Real Email Verifier</h3>
+      <p>Verifies email addresses for validity and deliverability.</p>
+      <div class="project-tags">
+        <span>API</span>
+        <span>JS</span>
+        <span>CSS</span>
+        <span>typeScript</span>
+      </div>
+      <div class="project-buttons">
+        <a href="https://real-email-verifier.netlify.app/" class="btn-primary">Live</a>
+        <a href="https://github.com/chaitanya11-dot/Real-Email-Verifier.git" class="btn-outline">GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="service" class="services-section">
+
+  <p class="services-subtitle">SERVICES</p>
+  <h2 class="services-title">Our Features & Services</h2>
+  <div class="services-line"></div>
+
+  <div class="services-grid">
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-code"></i>
+      </div>
+      <h3>Web Development</h3>
+      <p>
+        I create responsive, modern websites using clean architecture
+        and scalable frontend & backend technologies.
+      </p>
+      <div class="service-tags">
+        <span>Responsive</span>
+        <span>Performance</span>
+        <span>SEO Friendly</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-mobile-alt"></i>
+      </div>
+      <h3>Mobile Development</h3>
+      <p>
+        Cross-platform mobile applications built for performance,
+        usability, and seamless user experience.
+      </p>
+      <div class="service-tags">
+        <span>Cross Platform</span>
+        <span>Optimized</span>
+        <span>User Friendly</span>
+      </div>
+    </div>
+
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-palette"></i>
+      </div>
+      <h3>UI/UX Design</h3>
+      <p>
+        Designing intuitive, accessible, and visually appealing
+        user interfaces focused on usability and user satisfaction.
+      </p>
+      <div class="service-tags">
+        <span>User-Centered</span>
+        <span>Modern UI</span>
+        <span>Accessibility</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="contact-container">
+
+    <!-- LEFT SIDE -->
+    <div class="contact-left">
+      <h2>Get In Touch</h2>
+      <p>
+        Let's collaborate! I'm always open to discussing exciting 
+        projects, internships, and real-world opportunities.
+      </p>
+
+      <div class="contact-info-item">
+        <i class="fa-solid fa-envelope"></i>
+        <span>pamidichaitanya@gmail.com</span>
+      </div>
+
+      <div class="contact-info-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <span>India</span>
+      </div>
+
+      <div class="contact-social">
+        <a href="https://github.com/chaitanya11-dot" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/pamidi-chaitanya-379093350/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDE FORM -->
+    <div class="contact-right">
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
