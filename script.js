@@ -101,5 +101,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: "smooth"
             });
         }
+
+        // Close hamburger menu on link click
+        const navMenu = document.getElementById("navMenu");
+        const hamburger = document.getElementById("hamburger");
+        if (navMenu && hamburger) {
+            navMenu.classList.remove("active");
+            hamburger.classList.remove("active");
+        }
     });
 });
+
+// ===============================
+// HAMBURGER MENU TOGGLE
+// ===============================
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+if (hamburger && navMenu) {
+    hamburger.addEventListener("click", () => {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    });
+}
