@@ -382,19 +382,39 @@
       </div>
 
       <!-- RIGHT SIDE FORM -->
-      <div class="contact-right">
-        <form>
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
-          <textarea rows="5" placeholder="Your Message" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
+      <!-- RIGHT SIDE FORM -->
+<div class="contact-right">
 
-    </div>
-  </section>
+  <form 
+    action="https://formspree.io/f/xqeybqyb" 
+    method="POST"
+  >
 
-  <script src="script.js"></script>
-</body>
+    <input 
+      type="text" 
+      name="name"
+      placeholder="Your Name" 
+      required
+    >
 
-</html>
+    <input 
+      type="email" 
+      name="email"
+      placeholder="Your Email" 
+      required
+    >
+
+    <textarea 
+      name="message"
+      rows="5" 
+      placeholder="Your Message" 
+      required
+    ></textarea>
+
+    <button type="submit">
+      Send Message
+    </button>
+
+  </form>
+
+</div>
