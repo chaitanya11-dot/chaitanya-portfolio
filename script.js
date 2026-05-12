@@ -126,5 +126,3 @@ if (hamburger && navMenu) {
 }
 
 
-
-console.log("deployment test");
