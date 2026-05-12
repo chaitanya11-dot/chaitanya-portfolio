@@ -124,3 +124,7 @@ if (hamburger && navMenu) {
         navMenu.classList.toggle("active");
     });
 }
+
+
+
+console.log("deployment test");
